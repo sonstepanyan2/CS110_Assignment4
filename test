@@ -1,0 +1,6 @@
+const homework4 = require('./homework4');
+
+console.log(homework4.factorial(3));
+console.log(homework4.gcd(10, 15));
+console.log(homework4.lcm(7, 5));
+console.log(homework4.Hexadecimal(81));
