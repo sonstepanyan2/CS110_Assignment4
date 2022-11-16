@@ -1,0 +1,61 @@
+
+
+
+ function factorial(n){
+    let orn = n;
+    let factorial=1;
+for(let a = 1; a <= n; a++){
+    factorial *= a;
+}
+return factorial;
+ }
+ console.log(factorial);
+
+
+
+
+ function gcd(num1, num2){
+    let ornum1 = num1;
+    let ornum2 = num2
+    while ((num1 % num2) > 0) {
+        rem = num2
+        num2 = num1 % num2
+        num1 = num2;
+        num1 = rem
+    }
+    return num2;
+}
+console.log(gcd)
+
+
+
+function lcm(x, y) {
+    let gcd1 = gcd(x, y);
+    let pr = x * y;
+    lcm = pr/gcd1
+    return lcm
+}
+console.log(lcm);
+
+
+
+function Hexadecimal(n){ 
+    let array = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    let hex = "";
+    let rem = "";
+        while(n > 0) {
+            rem = n % 16;
+            hex = hex + array[rem];
+            n = Math.floor(n/16);
+        }
+        return hex;
+    }
+    console.log(Hexadecimal);
+
+
+    module.exports = {
+        factorial,
+        gcd,
+        lcm,
+        Hexadecimal,
+    }
