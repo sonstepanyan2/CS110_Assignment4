@@ -2,7 +2,7 @@ let n = 5;
 let text = "";
 for (let a = 1; a <= n; a++) {
     for (let b=0; b < n - a; b++) {
-        text = text + "";
+        text = text + " ";
     }
     for (let c = 0; c < a; c++) {
         text = text + "+";
